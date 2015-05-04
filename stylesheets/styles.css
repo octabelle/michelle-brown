@@ -83,10 +83,12 @@ section {
   overflow: hidden;
 }
 
-section#home { background-color: #00c0e4; margin-top: 70px;}
-section#about { background-color: #eac14d; }
-section#clients { background-color: #e6567a; }
-section#contact-us { background-color: #5bd999; }
+section#kaiser { background-color: #00c0e4; margin-top: 70px;}
+section#snap { background-color: #eac14d; }
+section#htc1 { background-color: #e6567a; }
+section#htc2 { background-color: #5bd999; }
+section#crumble { background-color: #00c0e4; }
+section#ocean { background-color: #eac14d; }
 
 section h2 {
   color: white;
