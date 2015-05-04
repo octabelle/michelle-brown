@@ -86,17 +86,25 @@ section {
 }
 
 section#kaiser { background-color: #889795; margin-top: 70px;}
-section#snap { background-color: #d9c6bf; margin-top: 70px;}
-section#htc1 { background-color: #ddd1b4; margin-top: 70px;}
-section#htc2 { background-color: #d6eae6; margin-top: 70px;}
-section#crumble { background-color: #889795; margin-top: 70px;}
-section#ocean { background-color: #d9c6bf; margin-top: 70px;}
+section#snap { background-color: #d9c6bf; }
+section#htc1 { background-color: #ddd1b4; }
+section#htc2 { background-color: #d6eae6; }
+section#crumble { background-color: #889795; }
+section#ocean { background-color: #d9c6bf; }
 
 section h2 {
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 3em;
+  margin: 0px;
+}
+
+section h3 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 2em;
   margin: 0px;
 }
 
