@@ -1,144 +1,256 @@
-@charset “UTF-8”;
-
-
-/******/
-/* sets default values to zero, if not the browser will take control and add its default value */
-* {
-margin:0;
-padding:0;
-color: #fff;
-}
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-	background-image: url("images/backgroundImage.png");
-	
+  padding:50px;
+  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#777;
+  font-weight:300;
+  background-image: url("images/backgroundImage.png");
 }
 
-a:link {
-	color: #3299BB;
-	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
+h1, h2, h3, h4, h5, h6 {
+  color:#222;
+  margin:0 0 20px;
 }
 
-a:visited {
-	color: #3299BB;
-	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
 }
 
-a:hover{
-	color: #fff;
-	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
-	
+h1, h2, h3 {
+  line-height:1.1;
 }
 
-a:active {
-	color: #3299BB;
-	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-}
-
-/* adjust the paragraph’s line-height to be 1.25em; (this will add space between lines) */
-/* adjust the paragraph’s margin-bottom to be 1em; (this will add space between paragraphs) */
-p {
-line-height:1.25em;
-margin-bottom: 1em;
-color: #fff;
-font-family: 'Montserrat', sans-serif;
-}
-/* change the heading1 to be navy color */
 h1 {
-color: #fff;
-font-family: 'Pacifico', cursive;
+  font-size:28px;
 }
 
-
-
-/* the main shell holding all div tags */
-#wrapper {
-width: 755px;
-position:relative;
-margin: auto;
-background-color: #3299BB;
-font-family: 'Montserrat', sans-serif;
-}
-/* top navigation div */
-#navcontainer ul {
-background-color: #FC9D9A;
-float: left;
-width: 100%;
-padding-right: 32px; /* bullets are included in the padding area */
-/* removing bullets requires padding to be added at the right */
-}
-#navcontainer ul li { /* inline keeps layout horizontal */
-display: inline;
-
-}
-#navcontainer ul li a {padding: 0.2em 1em;
-text-decoration: none;
-float: left;
-border-right: 1px solid #fff;
-color: #fff;
-}
-/* change the background-color to be #369 */
-#navcontainer ul li a:hover { /* controls the over or hover state of rollover */
-background-color: #78C0A8;
-}
-#navcontainer ul li #current { /* sets the link of the active page tab color to be different */
-background-color: #78C0A8;
-}
-#main {
-float: left;
-width: 100%;
-background-color: #BCBCBC;
-padding-left:2em;
-font-family: 'Montserrat', sans-serif;
-}
-/* adding margin-left will move the UnorderedList inside wrapper */
-#main ul {
-margin-left:40px;
-}
-/* float picture left, add margin to keep text away from image, add width */
-#pictureL {
-width: 300px;
-float:left;
-margin:10px;
-font-family: 'Montserrat', sans-serif;
-}
-/* float picture right, add margin to keep text away from image, add width */
-#pictureR {
-width: 50%;
-float:right;
-margin:10px;
-color: #fff;
-
+h2 {
+  color:#393939;
 }
 
-/* set text color to white, background color to #036, position to absolute */
-/* bottom postion to 0px, and width to 100% */
-#footer {
-color:#FFF;
-background-color: #FC9D9A;
-bottom: 0px;
-width: 100%;
-padding-right: 32px; /* fits content to match navcontainer width */
+h3, h4, h5, h6 {
+  color:#494949;
 }
-/* align the text to center, and margin 0 */
-#footer p {
-text-align:center;
-margin:0;
-text-transform: uppercase;
+
+a {
+  color:#39c;
+  font-weight:400;
+  text-decoration:none;
 }
-/* sets the anchors in the footer id to be white and no underline */
-#footer a {
-color:#FFF;
-text-transform: uppercase;
+
+a small {
+  font-size:11px;
+  color:#777;
+  margin-top:-0.6em;
+  display:block;
 }
-#footer a:hover {
-color:#fff;
-background-color: #78C0A8;
+
+.wrapper {
+  width:860px;
+  margin:0 auto;
+}
+
+blockquote {
+  border-left:1px solid #e5e5e5;
+  margin:0;
+  padding:0 0 0 20px;
+  font-style:italic;
+}
+
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  color:#333;
+  font-size:12px;
+}
+
+pre {
+  padding:8px 15px;
+  background: #f8f8f8;  
+  border-radius:5px;
+  border:1px solid #e5e5e5;
+  overflow-x: auto;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+}
+
+dt {
+  color:#444;
+  font-weight:700;
+}
+
+th {
+  color:#444;
+}
+
+img {
+  max-width:100%;
+}
+
+header {
+  width:270px;
+  float:left;
+  position:fixed;
+}
+
+header ul {
+  list-style:none;
+  height:40px;
+  
+  padding:0;
+  
+  background: #eee;
+  background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+  background: -webkit-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
+  
+  border-radius:5px;
+  border:1px solid #d2d2d2;
+  box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
+  width:270px;
+}
+
+header li {
+  width:89px;
+  float:left;
+  border-right:1px solid #d2d2d2;
+  height:40px;
+}
+
+header ul a {
+  line-height:1;
+  font-size:11px;
+  color:#999;
+  display:block;
+  text-align:center;
+  padding-top:6px;
+  height:40px;
+}
+
+strong {
+  color:#222;
+  font-weight:700;
+}
+
+header ul li + li {
+  width:88px;
+  border-left:1px solid #fff;
+}
+
+header ul li + li + li {
+  border-right:none;
+  width:89px;
+}
+
+header ul a strong {
+  font-size:14px;
+  display:block;
+  color:#222;
+}
+
+section {
+  width:500px;
+  float:right;
+  padding-bottom:50px;
+}
+
+small {
+  font-size:11px;
+}
+
+hr {
+  border:0;
+  background:#e5e5e5;
+  height:1px;
+  margin:0 0 20px;
+}
+
+footer {
+  width:270px;
+  float:left;
+  position:fixed;
+  bottom:50px;
+}
+
+@media print, screen and (max-width: 960px) {
+  
+  div.wrapper {
+    width:auto;
+    margin:0;
+  }
+  
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
+  }
+  
+  header {
+    padding-right:320px;
+  }
+  
+  section {
+    border:1px solid #e5e5e5;
+    border-width:1px 0;
+    padding:20px 0;
+    margin:0 0 20px;
+  }
+  
+  header a small {
+    display:inline;
+  }
+  
+  header ul {
+    position:absolute;
+    right:50px;
+    top:52px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap:break-word;
+  }
+  
+  header {
+    padding:0;
+  }
+  
+  header ul, header p.view {
+    position:static;
+  }
+  
+  pre, code {
+    word-wrap:normal;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:15px;
+  }
+  
+  header ul {
+    display:none;
+  }
+}
+
+@media print {
+  body {
+    padding:0.4in;
+    font-size:12pt;
+    color:#444;
+  }
 }
