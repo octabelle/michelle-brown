@@ -29,7 +29,7 @@ header {
 }
 
 header h1 {
-  float: left;
+  float: right;
   margin: 5px 0px;
   color: white;
   font-family: 'Meddon', cursive;
@@ -37,7 +37,7 @@ header h1 {
 
 header nav ul {
   height: 70px;
-  float: right;
+  float: left;
 }
 
 header nav ul li {
