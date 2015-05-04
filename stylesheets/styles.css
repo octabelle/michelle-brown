@@ -1,12 +1,79 @@
+    * {
+      box-sizing:  border-box;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+      text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    }
+
+    body {
+      font-family: 'Roboto';
+      background: #A5879D;
+    }
+
+    .container {
+      width: 300px;
+      margin-top: 15px;
+      position: relative;
+      left: -270px;
+    }
+
+   	#nav-primary > ul {
+   		border: 15px solid #fff;
+   	}
+
+   	.nav-primary-list > li {
+   		font-size: 1em;
+   		line-height: 1.1em;
+   		font-weight: normal;
+   		position: relative;
+   	}   	
+   	
+   	.nav-primary-list li:hover a {
+   		left: 110px;
+   	}      	
+  	
+   	.nav-primary-list a {
+   		position: relative;
+   		display: block;
+      text-decoration: none;
+   		color: #fff;
+   		padding: 10px 20px 10px 180px;
+   		cursor: pointer;
+   	}   	
+
+    .nav-primary-list li:nth-child(2) a {
+   		background: #71a4b6;
+   }
+
+    .nav-primary-list li:nth-child(1) a {
+   		background: #6BAFA4;
+   	}
+
+    .nav-primary-list li:nth-child(3) a {
+   		background: #b65b5c;
+   	}
+
+    .nav-primary-list li:nth-child(4) a {
+   		background: #8c6983;
+   	}
+
+    .nav-primary-list li:nth-child(5) a {
+   		background: #5f848e;
+   	}
+
+    .nav-primary-list li:nth-child(6) a {
+   		background: #935556;
+   	}   
+
+  .nav-primary-list a {
+		transition: left 0.5s ease-in-out;
+	}	
+
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
-body {
-  padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
-  font-weight:300;
-  background-image: url("images/backgroundImage.png");
-}
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
