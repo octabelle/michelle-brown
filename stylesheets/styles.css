@@ -24,13 +24,13 @@ header {
   background-color: #373948;
   position: fixed;
   top: 0px;
-  left: 0px;
+  left: -70px;
   padding: 0px 0px 0px 30px;
 }
 
 header h1 {
   float: right;
-  margin: 5px 0px;
+  margin: 1px 0px;
   color: white;
   font-family: 'Meddon', cursive;
 }
